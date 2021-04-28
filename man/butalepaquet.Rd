@@ -18,7 +18,7 @@ Buta le paquet sun github
 \details{
 Pushes the package [paquet] on the remote.
 this is equivalent to 
-git add DESCRIPTIO
+git add DESCRIPTION
 git add NAMESPACE
 git add ./*.pdf"
 git add inst/*

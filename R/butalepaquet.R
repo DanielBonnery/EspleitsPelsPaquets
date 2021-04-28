@@ -3,7 +3,7 @@
 #' @details
 #' Pushes the package [paquet] on the remote.
 #' this is equivalent to 
-#' git add DESCRIPTIO
+#' git add DESCRIPTION
 #' git add NAMESPACE
 #' git add ./*.pdf"
 #' git add inst/*
@@ -28,7 +28,7 @@ butalepaquet<-function(files.to.exclude=NULL){
   }
   try(system("git add ./*.pdf"))
   try(system("git add inst/*"))
-  files.to.push<-setdiff(listfilefromfolder("man","data","R","demo"),files.to.exclude)
+  files.to.push<-setdiff(listfilefromfolder("man","data","R","demo","inst/extdata"),files.to.exclude)
   sapply(files.to.push,function(x){try(system(paste0("git add ",x)))})
   
   #system("git rm --cached -r Raw")
