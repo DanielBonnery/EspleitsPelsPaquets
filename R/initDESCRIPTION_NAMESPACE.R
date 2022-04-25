@@ -47,7 +47,7 @@ Description: ",description,if(!is.null(remotes)){paste0("
 Remotes: ",paste(remotes,collapse=",\n\t"))}else{""},if(!is.null(depends)){paste0("
 Depends: ",paste(depends,collapse=",\n\t"))}else{""},"
 License: GPL (>= 2)
-LazyLoad: ", LazyLoad, if(is.null(suggests){character(0)}else{paste0("
+LazyLoad: ", LazyLoad, if(is.null(suggests)){character(0)}else{paste0("
 Suggests: ",paste(suggests,collapse=",\n\t"))},"
 LazyData: ",LazyData),file.path(file.path(destdir,packagepath),'DESCRIPTION'))
   write('exportPattern("^[^\\\\.]")',file.path(file.path(destdir,packagepath),"NAMESPACE"))

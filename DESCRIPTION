@@ -1,13 +1,11 @@
-Package: LocustAnalysis
+Package: EspleitsPelsPaquets
 Type: Package
 Title: X
 Version: 1.0
-Date: 2021-10-01
+Date: 2022-04-25
 Author: D. Bonnery
 Maintainer: D. Bonnery  <daniel.bonnery@gmail.com>
 Description: Data
-Depends: R (>= 4.1.1)
 License: GPL (>= 2)
 LazyLoad: yes
 LazyData: true
-RoxygenNote: 7.1.1
